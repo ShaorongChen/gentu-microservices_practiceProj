@@ -16,7 +16,8 @@ def getCollegesWebsites(name):
         if college["name"].__contains__(name):
             for website in college["web_pages"]:
                 webpages.append(website)
-    return json.dumps({"Webpages": webpages},indent=4)
+    return json.dumps({"Webpages": webpages}, indent=4)
+
 
 if __name__ == "__main__":
     app.run(debug=True, port=5000)
